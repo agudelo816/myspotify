@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Resizable, ResizeCallback, ResizeDirection } from 're-resizable';
+import { Resizable, ResizeCallback } from 're-resizable';
 
 import './Sidebar.scss';
 
