@@ -8,16 +8,16 @@ const FrontPage = () => {
   return (
     <div className="front-page">
       <Sidebar />
-      <div className="main-content">
-        <div className="top-panel">
-          <div className="navigation-buttons">
+      <main className="main-content">
+        <header className="top-panel">
+          <nav className="navigation-buttons">
             <button className="nav-button">←</button>
             <button className="nav-button">→</button>
-          </div>
+          </nav>
           <SearchBar />
           <UserProfileMenu />
-        </div>
-      </div>
+        </header>
+      </main>
     </div>
   );
 };
