@@ -1,23 +1,17 @@
 import React from 'react';
+import { Track } from '../types/Track';
 import './TrackCard.scss';
 
 interface TrackCardProps {
-  title: string;
-  artist: string;
-  duration: string;
-  releaseDate: string;
-  formats: { type: string; size: string }[];
+  track: Track;
+  onClick: () => void; // Add onClick prop to handle click events
 }
 
-const TrackCard: React.FC<TrackCardProps> = ({
-  title,
-  artist,
-  duration,
-  releaseDate,
-  formats,
-}) => {
+const TrackCard: React.FC<TrackCardProps> = ({ track, onClick }) => {
+  const { title, artist, duration, releaseDate, formats } = track;
+
   return (
-    <div className="track-card">
+    <div className="track-card" onClick={onClick}>
       <div className="track-info">
         <h3>{title}</h3>
         <p>{artist}</p>
