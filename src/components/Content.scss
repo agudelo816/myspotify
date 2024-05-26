@@ -1,0 +1,7 @@
+.content {
+  flex-grow: 1; // Allow the content to grow and fill available space
+  padding: 20px; // Add some padding
+  background-color: #202020; // Set background color
+  color: #fff; // Set text color
+  overflow: auto; // Allow scrolling if content overflows
+}

@@ -1,0 +1,48 @@
+.track-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #fff;
+  transition:
+    background-color 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s; // Add transitions for smooth effects
+
+  &:hover {
+    background-color: #333; // Darken the background color on hover
+    transform: scale(1.02); // Slightly scale up the card on hover
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Add a shadow on hover
+  }
+
+  .track-info {
+    flex: 1;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  }
+
+  .track-formats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .format-link {
+      color: #1db954;
+      text-decoration: none;
+      margin: 2px 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
