@@ -1,0 +1,45 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e; // Dark background color
+  border-radius: 25px; // Rounded corners
+  padding: 5px 10px; // Padding inside the search bar
+  width: 100%;
+  max-width: 600px; // Adjust width as needed
+  color: #fff; // White text color
+
+  .search-icon {
+    color: #bbb; // Color of the magnifying glass icon on the left
+    margin-right: 10px;
+  }
+
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    background: none;
+    color: #fff; // Text color inside the input
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+
+    &::placeholder {
+      color: #bbb; // Placeholder text color
+    }
+  }
+
+  .search-button {
+    background: none;
+    border: none;
+    color: #bbb; // Color of the magnifying glass icon on the right
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff; // Color change on hover
+    }
+
+    i {
+      font-size: 16px;
+    }
+  }
+}
