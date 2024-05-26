@@ -1,0 +1,35 @@
+.top-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  border-bottom: 1px solid #444;
+}
+
+.navigation-buttons {
+  display: flex;
+
+  .nav-button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
+
+input {
+  flex-grow: 1;
+  margin: 0 20px; // Prevent the search bar from touching the buttons
+}
+
+> div {
+  display: flex;
+}
