@@ -8,6 +8,7 @@ import {
   spotifyData,
   downloadData,
 } from '../../data';
+import MusicPlayer from '../MusicPlayer/MusicPlayer';
 
 import './Sidebar.scss';
 
@@ -15,6 +16,7 @@ const Sidebar: React.FC = () => {
   const [size, setSize] = useState({ width: 200, height: '100%' });
   const [showButtons, setShowButtons] = useState(false);
   const [buttonData, setButtonData] = useState<ButtonData[]>([]);
+  const [selectedMusicId, setSelectedMusicId] = useState<string | null>(null); // State to store the selected music ID
 
   const handleResizeStop: ResizeCallback = (e, direction, ref, d) => {
     setSize((prevSize) => ({
@@ -30,6 +32,10 @@ const Sidebar: React.FC = () => {
 
   const handleBackClick = () => {
     setShowButtons(false);
+  };
+
+  const handleMusicButtonClick = (musicId: string) => {
+    setSelectedMusicId(musicId); // Set the selected music ID
   };
 
   return (
@@ -50,7 +56,7 @@ const Sidebar: React.FC = () => {
                 <SidebarButton
                   key={index}
                   label={item.label}
-                  onClick={item.onClick}
+                  onClick={() => handleMusicButtonClick(item.musicId)} // Pass musicId to handleMusicButtonClick
                 />
               ))}
               <SidebarButton label="Back" onClick={handleBackClick} />
@@ -77,6 +83,9 @@ const Sidebar: React.FC = () => {
           )}
         </div>
       </div>
+      {selectedMusicId && (
+        <MusicPlayer musicId={selectedMusicId} /> // Render the MusicPlayer component with the selected music ID
+      )}
     </Resizable>
   );
 };
