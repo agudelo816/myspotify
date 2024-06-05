@@ -1,5 +1,7 @@
+// BottomBar.tsx
 import React from 'react';
-import { Track } from '../../types/Track'; // Import the Track interface
+import { Track } from '../../types/Track';
+import MusicPlayer from '../MusicPlayer/MusicPlayer'; // Import the MusicPlayer component
 import './BottomBar.scss';
 
 interface BottomBarProps {
@@ -19,6 +21,8 @@ const BottomBar: React.FC<BottomBarProps> = ({ track, onOpenDetail }) => {
           <button className="detail-button" onClick={onOpenDetail}>
             Show Details
           </button>
+          {/* Integrate the MusicPlayer component here */}
+          <MusicPlayer musicId={track.musicId} />
         </>
       ) : (
         <p>Select a track to see details</p>

@@ -8,8 +8,6 @@ import {
   spotifyData,
   downloadData,
 } from '../../data';
-import MusicPlayer from '../MusicPlayer/MusicPlayer';
-
 import './Sidebar.scss';
 
 const Sidebar: React.FC = () => {
@@ -83,9 +81,6 @@ const Sidebar: React.FC = () => {
           )}
         </div>
       </div>
-      {selectedMusicId && (
-        <MusicPlayer musicId={selectedMusicId} /> // Render the MusicPlayer component with the selected music ID
-      )}
     </Resizable>
   );
 };
