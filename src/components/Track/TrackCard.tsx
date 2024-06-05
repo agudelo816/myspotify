@@ -1,5 +1,5 @@
 import React from 'react';
-import { Track } from '../types/Track';
+import { Track } from '../../types/Track';
 import './TrackCard.scss';
 
 interface TrackCardProps {

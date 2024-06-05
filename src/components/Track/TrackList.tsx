@@ -1,6 +1,6 @@
 import React from 'react';
 import TrackCard from './TrackCard';
-import { Track } from '../types/Track';
+import { Track } from '../../types/Track';
 import './TrackList.scss';
 
 interface TrackListProps {

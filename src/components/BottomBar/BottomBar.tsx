@@ -1,5 +1,5 @@
 import React from 'react';
-import { Track } from '../types/Track'; // Import the Track interface
+import { Track } from '../../types/Track'; // Import the Track interface
 import './BottomBar.scss';
 
 interface BottomBarProps {

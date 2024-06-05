@@ -1,6 +1,6 @@
 import React from 'react';
 import './TrackDetail.scss';
-import { Track } from '../types/Track';
+import { Track } from '../../types/Track';
 
 interface TrackDetailProps {
   track: Track;

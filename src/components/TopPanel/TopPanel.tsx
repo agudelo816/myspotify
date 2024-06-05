@@ -1,5 +1,5 @@
-import SearchBar from '../components/SearchBar';
-import UserProfileMenu from '../components/UserProfileMenu';
+import SearchBar from '../SearchBar';
+import UserProfileMenu from './UserProfileMenu';
 import './TopPanel.scss';
 
 const TopPanel = () => {
@@ -10,7 +10,6 @@ const TopPanel = () => {
         <button className="nav-button">→</button>
       </nav>
       <SearchBar />
-      {/* <UserProfileMenu></UserProfileMenu> */}
     </header>
   );
 };

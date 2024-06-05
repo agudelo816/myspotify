@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import TopPanel from '../components/TopPanel';
-import Content from '../components/Content';
-import TrackList from '../components/TrackList';
-import BottomBar from '../components/BottomBar';
+import Sidebar from '../components/Sidebar/Sidebar';
+import TopPanel from '../components/TopPanel/TopPanel';
+import Content from '../components/Content/Content';
+import TrackList from '../components/Track/TrackList';
+import BottomBar from '../components/BottomBar/BottomBar';
 import { Track } from '../types/Track';
-import TrackDetail from '../components/TrackDetail';
+import TrackDetail from '../components/Track/TrackDetail';
 import './FrontPage.scss';
 
 const FrontPage: React.FC = () => {
