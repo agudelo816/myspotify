@@ -1,9 +1,11 @@
 .track-detail {
   position: fixed;
-  top: 0;
+  top: 60px; // Adjust this value to match the height of your TopPanel
   right: 0;
   width: 300px; // Adjust width as needed
-  height: 100%;
+  height: calc(
+    100% - 60px
+  ); // Subtract the TopPanel height from the total height
   background-color: #1e1e1e;
   color: #fff;
   padding: 20px;

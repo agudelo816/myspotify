@@ -10,7 +10,7 @@ const TopPanel = () => {
         <button className="nav-button">→</button>
       </nav>
       <SearchBar />
-      <UserProfileMenu></UserProfileMenu>
+      {/* <UserProfileMenu></UserProfileMenu> */}
     </header>
   );
 };

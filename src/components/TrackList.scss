@@ -1,3 +1,8 @@
+.track-list-container {
+  position: relative;
+  padding-bottom: 60px; // Ensure content does not overlap the bottom bar
+}
+
 .track-list {
   display: flex;
   flex-direction: column;
